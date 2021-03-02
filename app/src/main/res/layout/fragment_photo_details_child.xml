@@ -33,13 +33,12 @@
                 android:fitsSystemWindows="true"
                 app:contentScrim="@color/white"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-                app:statusBarScrim="?attr/colorPrimaryVariant">
+                >
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/imageViewPlanet"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
                     android:contentDescription="@string/planet_image"
                     android:scaleType="fitXY"
                     app:imageUrl="@{dataModel.url}"
