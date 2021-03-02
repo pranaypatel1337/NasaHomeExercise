@@ -16,6 +16,8 @@ class BindingAdapter {
                 imageView.load(it) {
                     crossfade(true)
                     scale(Scale.FIT)
+                    placeholder(R.drawable.ic_launcher_background)
+                    error(R.drawable.ic_launcher_background)
                 }
             } ?: kotlin.run {
                 imageView.load(R.drawable.ic_launcher_background)

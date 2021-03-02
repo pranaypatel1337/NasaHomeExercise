@@ -26,7 +26,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/dimen_padding_medium">
+            android:paddingBottom="@dimen/dimen_padding_large">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageViewPlanet"
@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/planet_image"
+                app:imageUrl="@{dataModel.url}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -73,7 +74,8 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:padding="@dimen/dimen_padding_small"
+                android:layout_marginHorizontal="@dimen/dimen_padding_x_small"
+                android:textColor="?android:textColorSecondary"
                 android:visibility="@{dataModel.copyright.empty ?View.GONE:View.VISIBLE}"
                 app:layout_constraintBottom_toBottomOf="@id/textViewPhotoDate"
                 app:layout_constraintEnd_toEndOf="@id/textViewPhotoTitle"

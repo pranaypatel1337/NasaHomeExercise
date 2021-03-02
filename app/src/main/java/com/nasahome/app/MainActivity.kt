@@ -30,6 +30,6 @@ class MainActivity : AppCompatActivity() {
         val photoCollectionType = object : TypeToken<Collection<PhotoDetailsItem>>() {}.type
         viewModelPhotos.photosList =
             Gson().fromJson(readDataFromAsset(fileName), photoCollectionType)
-        viewModelPhotos.photosList.sortedBy { it.date.toDate() }
+        viewModelPhotos.photosList.sortBy {  it.date.toDate() }
     }
 }
