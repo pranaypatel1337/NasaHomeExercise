@@ -11,4 +11,9 @@
     <dimen name="dimen_font_medium">12sp</dimen>
     <dimen name="dimen_font_small">10sp</dimen>
     <dimen name="dimen_space_item">4dp</dimen>
+    <dimen name="dimen_height_large">300dp</dimen>
+    <dimen name="dimen_margin_medium">10dp</dimen>
+    <dimen name="dimen_margin_large">14dp</dimen>
+    <dimen name="dimen_line_space">2dp</dimen>
+    <dimen name="dimen_button_size">50dp</dimen>
 </resources>

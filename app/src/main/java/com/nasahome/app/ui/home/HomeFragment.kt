@@ -1,6 +1,7 @@
 package com.nasahome.app.ui.home
 
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.findNavController
 import com.nasahome.app.R
 import com.nasahome.app.base.BaseFragment
 import com.nasahome.app.databinding.FragmentHomeBinding
@@ -22,11 +23,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, PhotosViewModel>(R.layout
                 run {
                     this@HomeFragment.toast(photoDetailsItem.title)
                     viewmodel.selectedItem = position
+                    root.findNavController().navigate(R.id.photoDetailsFragment)
                 }
             }
             recyclerViewPlanetsInfo.apply {
                 adapter = photoListAdapter
-                addItemDecoration(ItemOffsetDecoration(this@HomeFragment.requireContext(),R.dimen.dimen_space_item))
+                addItemDecoration(
+                    ItemOffsetDecoration(
+                        this@HomeFragment.requireContext(),
+                        R.dimen.dimen_space_item
+                    )
+                )
             }
         }
     }
