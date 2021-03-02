@@ -22,4 +22,26 @@
     <style name="Theme.NasaHomeAppPre.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.NasaHomeAppPre.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextViewTitle">
+        <item name="android:textSize">@dimen/dimen_font_large</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">?android:colorPrimary</item>
+        <item name="android:padding">@dimen/dimen_padding_medium</item>
+    </style>
+
+    <style name="TextViewSubTitle">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/dimen_font_medium</item>
+        <item name="android:paddingStart">@dimen/dimen_padding_medium</item>
+        <item name="android:paddingLeft">@dimen/dimen_padding_medium</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Card.Media" parent="">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopLeft">@dimen/card_image_corner</item>
+        <item name="cornerSizeTopRight">@dimen/card_image_corner</item>
+    </style>
 </resources>

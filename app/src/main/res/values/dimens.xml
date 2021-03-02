@@ -1,3 +1,11 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_corner">2dp</dimen>
+    <dimen name="card_image_corner">4dp</dimen>
+    <dimen name="dimen_padding_medium">6dp</dimen>
+    <dimen name="dimen_padding_small">4dp</dimen>
+    <dimen name="dimen_font_large">14sp</dimen>
+    <dimen name="dimen_font_medium">12sp</dimen>
+    <dimen name="dimen_font_small">10sp</dimen>
 </resources>
