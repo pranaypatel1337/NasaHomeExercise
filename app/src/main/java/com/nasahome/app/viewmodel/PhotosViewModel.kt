@@ -36,6 +36,7 @@ class PhotosViewModel(private val application: Application) : BaseViewModel() {
 
     fun onPreviousButtonClick() {
         viewState.value = ViewClickState.ButtonPreviousClick
+        viewState.replayCache
     }
 
     fun onNextButtonClick() {

@@ -69,6 +69,7 @@ class PhotoDetailsFragment :
                     else -> {
                     }
                 }
+                viewmodel.viewState.value = ViewClickState.StateNone // Reset status
             }
         }
     }

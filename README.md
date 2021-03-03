@@ -7,9 +7,9 @@
 
 Main Listing(Light) | Details(Light) |
 --- | --- |
-![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/refactor_app/results/screen_shot_ligh_1.png) | ![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/refactor_app/results/screen_shot_light_2.png) | 
+![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/develop/results/screen_shot_ligh_1.png) | ![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/develop/results/screen_shot_light_2.png) | 
 Main Listing(Dark) | Details(Dark) |
-![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/refactor_app/results/screen_shot_dark_1.png) | ![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/refactor_app/results/screen_shot_dark_2.png) |
+![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/develop/results/screen_shot_dark_1.png) | ![](https://github.com/pranaypatel1337/NasaHomeExercise/blob/develop/results/screen_shot_dark_2.png) |
 
 ## Built With 🛠
 
