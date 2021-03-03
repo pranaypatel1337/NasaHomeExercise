@@ -7,10 +7,11 @@ import com.nasahome.app.base.BaseFragment
 import com.nasahome.app.databinding.FragmentHomeBinding
 import com.nasahome.app.databinding.FragmentPhotoDetailsBinding
 import com.nasahome.app.viewmodel.PhotosViewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class PhotoDetailsFragment :
     BaseFragment<FragmentPhotoDetailsBinding, PhotosViewModel>(R.layout.fragment_photo_details) {
-    override val viewmodel: PhotosViewModel by activityViewModels()
+    override val viewmodel: PhotosViewModel by sharedViewModel()
 
     override fun initialize() {
         super.initialize()
