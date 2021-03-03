@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -12,8 +11,22 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:fitsSystemWindows="true"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewNavigationBack"
+            android:layout_width="@dimen/dimen_button_size"
+            android:layout_height="wrap_content"
+            android:onClick="@{v->viewModel.onImageViewBackClick()}"
+            app:srcCompat="@drawable/ic_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/dimen_padding_small"
+            app:tint="?android:textColorPrimary"
+            android:elevation="@dimen/dimen_padding_small"
+            android:layout_margin="@dimen/dimen_padding_large"
+             />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerPhotos"
@@ -28,6 +41,7 @@
             android:id="@+id/buttonPrevious"
             style="@style/ButtonStyle"
             android:layout_margin="@dimen/dimen_margin_large"
+            android:onClick="@{v->viewModel.onPreviousButtonClick()}"
             app:icon="@drawable/ic_baseline_arrow_back_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -36,6 +50,7 @@
             android:id="@+id/buttonNext"
             style="@style/ButtonStyle"
             android:layout_margin="@dimen/dimen_margin_large"
+            android:onClick="@{v->viewModel.onNextButtonClick()}"
             app:icon="@drawable/ic_baseline_arrow_forward_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

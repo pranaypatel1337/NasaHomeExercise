@@ -5,6 +5,7 @@ import android.content.res.AssetManager
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.MutableLiveData
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -43,4 +44,11 @@ fun View.hide() {
  */
 fun Date.formatDate(): String {
     return SimpleDateFormat("dd MMM, yyyy", Locale.getDefault()).format(this)
+}
+/**
+ * Extension Function for initializing [MutableLiveData] with some initial value
+ * @param data is the initial value
+ * */
+fun <T> MutableLiveData<T>.initWith(data: T): MutableLiveData<T> = this.apply {
+    value = data
 }

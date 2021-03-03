@@ -39,6 +39,8 @@
                     android:id="@+id/imageViewPlanet"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    tools:minHeight="@dimen/dimen_height_large"
+                    tools:scaleType="centerCrop"
                     android:contentDescription="@string/planet_image"
                     app:imageUrl="@{dataModel.url}"
                     app:layout_constraintEnd_toEndOf="parent"
