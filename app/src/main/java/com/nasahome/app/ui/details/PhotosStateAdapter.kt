@@ -3,8 +3,6 @@ package com.nasahome.app.ui.details
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.nasahome.app.model.PhotoDetailsItem
 import com.nasahome.app.ui.details.PhotoDetailsFragment.Companion.fragmentPosition

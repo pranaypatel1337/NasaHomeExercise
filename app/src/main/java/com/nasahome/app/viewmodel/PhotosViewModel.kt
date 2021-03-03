@@ -1,12 +1,10 @@
 package com.nasahome.app.viewmodel
 
 import android.app.Application
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.nasahome.app.base.BaseViewModel
-import com.nasahome.app.extension.initWith
 import com.nasahome.app.extension.readDataFromAsset
 import com.nasahome.app.extension.toDate
 import com.nasahome.app.model.PhotoDetailsItem
@@ -18,7 +16,7 @@ class PhotosViewModel(private val application: Application) : BaseViewModel() {
     var photosList = mutableListOf<PhotoDetailsItem>()
     var selectedItem: Int = 0
     private val fileName = "data.json"
-    val viewState = MutableStateFlow<ViewClickState>(ViewClickState.StateNo)
+    val viewState = MutableStateFlow<ViewClickState>(ViewClickState.StateNone)
 
     init {
         preparePhotoList()

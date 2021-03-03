@@ -25,7 +25,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, PhotosViewModel>(R.layout
                 run {
                     this@HomeFragment.toast(photoDetailsItem.title)
                     viewmodel.selectedItem = position
-                    viewmodel.viewState.value = ViewClickState.StateNo
+                    viewmodel.viewState.value = ViewClickState.StateNone
                     root.findNavController()
                         .navigate(R.id.action_homeFragment_to_photoDetailsFragment)
                 }

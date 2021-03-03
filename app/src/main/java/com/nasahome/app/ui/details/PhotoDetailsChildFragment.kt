@@ -1,6 +1,5 @@
 package com.nasahome.app.ui.details
 
-import androidx.fragment.app.activityViewModels
 import com.nasahome.app.R
 import com.nasahome.app.base.BaseFragment
 import com.nasahome.app.databinding.FragmentPhotoDetailsChildBinding

@@ -1,6 +1,5 @@
 package com.nasahome.app.extension
 
-import android.content.Context
 import android.content.res.AssetManager
 import android.view.View
 import android.widget.Toast
@@ -22,7 +21,7 @@ fun AssetManager.readDataFromAsset(fileName: String): String {
  * Convert String date to Date object
  */
 fun String.toDate(): Date {
-return SimpleDateFormat("yyyy-MM-dd",Locale.getDefault()).parse(this)
+    return SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).parse(this)
 }
 
 /**
@@ -45,6 +44,7 @@ fun View.hide() {
 fun Date.formatDate(): String {
     return SimpleDateFormat("dd MMM, yyyy", Locale.getDefault()).format(this)
 }
+
 /**
  * Extension Function for initializing [MutableLiveData] with some initial value
  * @param data is the initial value

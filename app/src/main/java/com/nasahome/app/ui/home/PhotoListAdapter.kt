@@ -11,7 +11,7 @@ import com.nasahome.app.BR
 import com.nasahome.app.model.PhotoDetailsItem
 
 class PhotoListAdapter(
-    @LayoutRes val listItemLayout: Int, private val list: List<PhotoDetailsItem>,
+    @LayoutRes val listItemLayout: Int, list: List<PhotoDetailsItem>,
     private val listener: (PhotoDetailsItem, Int) -> Unit
 ) : RecyclerView.Adapter<PhotoListAdapter.PhotoViewHolder>() {
     private val photosList = list
