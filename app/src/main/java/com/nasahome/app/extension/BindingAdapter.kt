@@ -3,8 +3,8 @@ package com.nasahome.app.extension
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.databinding.BindingAdapter
-import coil.load
-import coil.size.Scale
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.nasahome.app.R
 
 class BindingAdapter {
@@ -13,17 +13,17 @@ class BindingAdapter {
         @BindingAdapter("imageUrl")
         fun bindImage(imageView: AppCompatImageView, url: String?) {
             url?.let {
-                imageView.load(it) {
-                    crossfade(true)
-                    scale(Scale.FIT)
-                    placeholder(R.drawable.ic_launcher_background)
-                    error(R.drawable.ic_launcher_background)
-                }
+                Glide.with(imageView.context).
+                load(it).apply(RequestOptions.noTransformation())
+                    .placeholder(R.drawable.ic_launcher_background)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(imageView)
             } ?: kotlin.run {
-                imageView.load(R.drawable.ic_launcher_background)
+                Glide.with(imageView.context).
+                load(R.drawable.ic_launcher_background).apply(RequestOptions.centerCropTransform())
+                    .into(imageView)
             }
         }
-
         @JvmStatic
         @BindingAdapter("value")
         fun formatCopyrightValue(textView: AppCompatTextView, name: String?) {

@@ -21,7 +21,7 @@ class PhotoDetailsFragment :
                 viewmodel.photosList
             )
             viewPagerPhotos.post {
-                viewPagerPhotos.currentItem = viewmodel.selectedItem
+                viewPagerPhotos.setCurrentItem(viewmodel.selectedItem,false)
             }
         }
         initViewClick()

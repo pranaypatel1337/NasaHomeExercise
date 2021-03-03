@@ -30,6 +30,10 @@
         <item name="android:padding">@dimen/dimen_padding_medium</item>
     </style>
 
+    <style name="TextViewTitleDetails" parent="TextViewTitle">
+        <item name="android:textSize">@dimen/dimen_font_x_large</item>
+    </style>
+
     <style name="TextViewSubTitle">
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="fontFamily">@font/nunito_medium</item>
@@ -38,12 +42,17 @@
         <item name="android:paddingLeft">@dimen/dimen_padding_medium</item>
     </style>
 
+    <style name="TextViewSubTitleDetails" parent="TextViewSubTitle">
+        <item name="android:textSize">@dimen/dimen_font_large</item>
+    </style>
+
     <style name="ShapeAppearanceOverlay.App.Card.Media" parent="">
         <item name="cornerSizeBottomLeft">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSizeTopLeft">@dimen/card_image_corner</item>
         <item name="cornerSizeTopRight">@dimen/card_image_corner</item>
     </style>
+
     <style name="ButtonStyle" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
         <item name="android:layout_height">@dimen/dimen_button_size</item>
         <item name="android:layout_width">@dimen/dimen_button_size</item>

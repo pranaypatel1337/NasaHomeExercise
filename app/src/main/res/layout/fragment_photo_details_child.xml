@@ -23,7 +23,7 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_height_large"
+            android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
             app:liftOnScroll="true">
 
@@ -40,7 +40,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:contentDescription="@string/planet_image"
-                    android:scaleType="fitXY"
                     app:imageUrl="@{dataModel.url}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +64,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textViewPhotoTitle"
-                    style="@style/TextViewTitle"
+                    style="@style/TextViewTitleDetails"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/dimen_margin_medium"
@@ -79,7 +78,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textViewPhotoDate"
-                    style="@style/TextViewSubTitle"
+                    style="@style/TextViewSubTitleDetails"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dimen_padding_small"
@@ -93,7 +92,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textViewPhotoCopyright"
-                    style="@style/TextViewSubTitle"
+                    style="@style/TextViewSubTitleDetails"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/card_elevation"
@@ -114,7 +113,7 @@
                     style="@style/TextViewSubTitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dimen_font_small"
+                    android:layout_marginTop="@dimen/dimen_margin_large"
                     android:lineSpacingExtra="@dimen/dimen_line_space"
                     android:textColor="?android:textColorSecondary"
                     app:description="@{dataModel.explanation}"

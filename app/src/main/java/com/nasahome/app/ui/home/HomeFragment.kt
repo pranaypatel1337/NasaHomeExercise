@@ -25,7 +25,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, PhotosViewModel>(R.layout
                 run {
                     this@HomeFragment.toast(photoDetailsItem.title)
                     viewmodel.selectedItem = position
-                    root.findNavController().navigate(R.id.photoDetailsFragment)
+                    root.findNavController().navigate(R.id.action_homeFragment_to_photoDetailsFragment)
                 }
             }
             recyclerViewPlanetsInfo.apply {

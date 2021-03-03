@@ -16,4 +16,5 @@
     <dimen name="dimen_margin_large">14dp</dimen>
     <dimen name="dimen_line_space">2dp</dimen>
     <dimen name="dimen_button_size">50dp</dimen>
+    <dimen name="dimen_font_x_large">16sp</dimen>
 </resources>
